@@ -14,11 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setear JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-
       - name: Running Tests
         run: |
           mvn clean install
