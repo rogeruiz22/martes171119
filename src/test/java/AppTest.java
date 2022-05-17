@@ -18,7 +18,7 @@ public class AppTest
         WebElement loginButton = driver.findElement(By.xpath("//input[@id='Login']"));
 
         username.sendKeys("incubatorteam@oktana.com");
-        password.sendKeys("incubator2022");
+        password.sendKeys("incubator2024");
         loginButton.click();
 
 //        WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']"));
