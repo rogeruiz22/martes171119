@@ -17,3 +17,5 @@ jobs:
       - name: Running Tests
         run: |
           mvn -B package --file pom.xml
+          mvn clean install
+          mvn test
