@@ -13,5 +13,4 @@ jobs:
 
       - name: Running Tests
         run: |
-          mvn clean install
           mvn test
