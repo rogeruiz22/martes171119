@@ -29,8 +29,8 @@ public class AppTest
         WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']//div//div/button"));
         appLauncher.click();
 
-        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//input[@placeholder='Search apps and items...']"));
-        appLauncherSearchBox.sendKeys("Contacts" + Keys.RETURN);
+        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//one-app-launcher-search-bar//div//input"));
+        appLauncherSearchBox.sendKeys("Contacts");
 
         driver.quit();
     }
