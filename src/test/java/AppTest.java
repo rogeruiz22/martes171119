@@ -1,5 +1,3 @@
-package org.example;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +17,7 @@ public class AppTest
         WebElement loginButton = driver.findElement(By.xpath("//input[@id='Login']"));
 
         username.sendKeys("incubatorteam@oktana.com");
-        password.sendKeys("incubator2024");
+        password.sendKeys("incubator2022");
         loginButton.click();
 
 //        WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']"));

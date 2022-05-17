@@ -3,7 +3,7 @@
 <suite name="Suite1">
     <test name="prueba">
         <classes>
-            <class name="org.example.AppTest"></class>
+            <class name="AppTest"></class>
         </classes>
     </test>
 </suite>
