@@ -21,16 +21,16 @@ public class AppTest
         password.sendKeys("incubator2022");
         loginButton.click();
 
-//        WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']"));
-//        appLauncher.click();
-//
-//        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//input[@placeholder='Search apps and items...']"));
-//        appLauncherSearchBox.sendKeys("Contacts" + Keys.RETURN);
-
         Thread.sleep(20000);
 
-        String title = driver.getTitle();
-        Assert.assertEquals(title, "Home | Salesforce");
+        WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']"));
+        appLauncher.click();
+
+        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//input[@placeholder='Search apps and items...']"));
+        appLauncherSearchBox.sendKeys("Contacts" + Keys.RETURN);
+
+//        String title = driver.getTitle();
+//        Assert.assertEquals(title, "Home | Salesforce");
 
         driver.quit();
     }
