@@ -23,14 +23,14 @@ public class AppTest
 
         Thread.sleep(20000);
 
-        WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']"));
+        String title = driver.getTitle();
+        Assert.assertEquals(title, "Home | Salesforce");
+
+        WebElement appLauncher = driver.findElement(By.xpath("//div[@class='navexSetupNav']//div//div/button"));
         appLauncher.click();
 
         WebElement appLauncherSearchBox = driver.findElement(By.xpath("//input[@placeholder='Search apps and items...']"));
         appLauncherSearchBox.sendKeys("Contacts" + Keys.RETURN);
-
-//        String title = driver.getTitle();
-//        Assert.assertEquals(title, "Home | Salesforce");
 
         driver.quit();
     }
