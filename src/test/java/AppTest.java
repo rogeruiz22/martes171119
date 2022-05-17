@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AppTest
@@ -25,6 +26,10 @@ public class AppTest
 //
 //        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//input[@placeholder='Search apps and items...']"));
 //        appLauncherSearchBox.sendKeys("Contacts" + Keys.RETURN);
+
+        String title = driver.getTitle();
+
+        Assert.assertEquals(title, "Home | Salesforce");
 
         driver.quit();
     }
