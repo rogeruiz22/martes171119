@@ -10,7 +10,7 @@ public class AppTest
     public void shouldAnswerWithTrue() throws Exception {
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.google.com");
+        driver.get("https://login.salesforce.com");
 
         Thread.sleep(3000);
 
