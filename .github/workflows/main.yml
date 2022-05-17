@@ -12,7 +12,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Haciendo checkout al proyecto
       - uses: actions/checkout@v3
 
       - name: Running Tests
