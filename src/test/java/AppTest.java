@@ -31,8 +31,10 @@ public class AppTest
 
         Thread.sleep(3000);
 
-        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//one-app-launcher-search-bar//div//input"));
-        appLauncherSearchBox.sendKeys("Contacts");
+        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//th[@class='selectionColumnHeader slds-has-focus']//span[@class='slds-checkbox--faux']"));
+        appLauncherSearchBox.sendKeys("Contacts" + Keys.RETURN);
+
+        Thread.sleep(3000);
 
         driver.quit();
     }
