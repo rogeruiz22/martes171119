@@ -23,8 +23,9 @@ public class AppTest
 
         Thread.sleep(20000);
 
-        WebElement selectAllContactsCheckbox = driver.findElement(By.xpath("(//span[@class='slds-checkbox--faux'])[1]"));
-        selectAllContactsCheckbox.click();
+//        WebElement selectAllContactsCheckbox = driver.findElement(By.xpath("(//span[@class='slds-checkbox--faux'])[1]"));
+        WebElement selectRogerContact = driver.findElement(By.xpath("//a[text()='Roger Ruiz']/ancestor::tr//td/following-sibling::td//span//span//input"));
+        selectRogerContact.click();
 
         Thread.sleep(3000);
 
