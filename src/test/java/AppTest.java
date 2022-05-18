@@ -40,12 +40,12 @@ public class AppTest
         WebElement emailBodyIframe = driver.findElement(By.xpath("//div[@class='content iframe-parent']//iframe"));
         driver.switchTo().frame(emailBodyIframe);
 
-        Thread.sleep(3000);
+//         Thread.sleep(3000);
 
         WebElement emailBody = driver.findElement(By.xpath("//div[@id='cke_editor']//iframe"));
         driver.switchTo().frame(emailBody);
 
-        Thread.sleep(10000);
+        Thread.sleep(8000);
 
         WebElement emailBodyTextArea = driver.findElement(By.cssSelector("body"));
         emailBodyTextArea.sendKeys("Este email fue enviado automaticamente usando workflows en " +
