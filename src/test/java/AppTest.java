@@ -27,12 +27,12 @@ public class AppTest
         WebElement selectRogerContact = driver.findElement(By.xpath("(//a[text()='Roger Ruiz']/ancestor::tr//td/following-sibling::td[@class='slds-cell-edit cellContainer'])[1]"));
         selectRogerContact.click();
 
-        Thread.sleep(3000);
+//         Thread.sleep(3000);
 
         WebElement sendListEmailButton = driver.findElement(By.xpath("//div[contains(text(), 'Send List Email')]"));
         sendListEmailButton.click();
 
-        Thread.sleep(8000);
+//         Thread.sleep(8000);
 
         WebElement subjectField = driver.findElement(By.xpath("//input[@placeholder='Enter Subject...']"));
         subjectField.sendKeys("Incubator Team - Github Actions funciona !!! :)");
