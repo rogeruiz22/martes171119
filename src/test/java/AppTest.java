@@ -21,17 +21,17 @@ public class AppTest
         password.sendKeys("incubator2022");
         loginButton.click();
 
-        Thread.sleep(18000);
+        Thread.sleep(15000);
 
         WebElement selectAllContactsCheckbox = driver.findElement(By.xpath("(//span[@class='slds-checkbox--faux'])[1]"));
         selectAllContactsCheckbox.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         WebElement sendListEmailButton = driver.findElement(By.xpath("//div[contains(text(), 'Send List Email')]"));
         sendListEmailButton.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         WebElement subjectField = driver.findElement(By.xpath("//input[@placeholder='Enter Subject...']"));
         subjectField.sendKeys("Incubator Team - Github Actions funciona !");
@@ -39,17 +39,17 @@ public class AppTest
         WebElement emailBodyIframe = driver.findElement(By.xpath("//div[@class='content iframe-parent']//iframe"));
         driver.switchTo().frame(emailBodyIframe);
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         WebElement emailBody = driver.findElement(By.xpath("//div[@id='cke_editor']//iframe"));
         driver.switchTo().frame(emailBody);
 
-        Thread.sleep(10000);
+        Thread.sleep(7000);
 
         WebElement emailBodyTextArea = driver.findElement(By.cssSelector("body"));
         emailBodyTextArea.sendKeys("Este email fue enviado automaticamente usando workflows en Github Actions con Selenium test. Se ejecuto al hacerle push a la rama principal");
 
-        Thread.sleep(10000);
+        Thread.sleep(7000);
 
         driver.switchTo().parentFrame();
         driver.switchTo().parentFrame();
@@ -57,7 +57,7 @@ public class AppTest
         WebElement sendButton = driver.findElement(By.xpath("//button[text()='Send']"));
         sendButton.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         driver.quit();
     }
