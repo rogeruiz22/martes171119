@@ -53,7 +53,7 @@ public class AppTest
         Thread.sleep(1000);
 
         driver.switchTo().parentFrame();
-//        driver.switchTo().parentFrame();
+        driver.switchTo().parentFrame();
 
         WebElement sendButton = driver.findElement(By.xpath("//button[text()='Send']"));
         sendButton.click();
