@@ -21,7 +21,7 @@ public class AppTest
         password.sendKeys("incubator2022");
         loginButton.click();
 
-        Thread.sleep(20000);
+        Thread.sleep(12000);
 
 //        WebElement selectAllContactsCheckbox = driver.findElement(By.xpath("(//span[@class='slds-checkbox--faux'])[1]"));
         WebElement selectRogerContact = driver.findElement(By.xpath("(//a[text()='Roger Ruiz']/ancestor::tr//td/following-sibling::td[@class='slds-cell-edit cellContainer'])[1]"));
@@ -32,7 +32,7 @@ public class AppTest
         WebElement sendListEmailButton = driver.findElement(By.xpath("//div[contains(text(), 'Send List Email')]"));
         sendListEmailButton.click();
 
-        Thread.sleep(4000);
+        Thread.sleep(2000);
 
         WebElement subjectField = driver.findElement(By.xpath("//input[@placeholder='Enter Subject...']"));
         subjectField.sendKeys("Incubator Team - Github Actions funciona !!! :)");
@@ -45,7 +45,7 @@ public class AppTest
         WebElement emailBody = driver.findElement(By.xpath("//div[@id='cke_editor']//iframe"));
         driver.switchTo().frame(emailBody);
 
-        Thread.sleep(8000);
+        Thread.sleep(2000);
 
         WebElement emailBodyTextArea = driver.findElement(By.cssSelector("body"));
         emailBodyTextArea.sendKeys("Este email fue enviado automaticamente usando workflows en " +
@@ -60,7 +60,7 @@ public class AppTest
         WebElement sendButton = driver.findElement(By.xpath("//button[text()='Send']"));
         sendButton.click();
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         driver.quit();
     }
