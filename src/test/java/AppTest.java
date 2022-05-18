@@ -32,7 +32,7 @@ public class AppTest
         WebElement sendListEmailButton = driver.findElement(By.xpath("//div[contains(text(), 'Send List Email')]"));
         sendListEmailButton.click();
 
-//         Thread.sleep(8000);
+        Thread.sleep(4000);
 
         WebElement subjectField = driver.findElement(By.xpath("//input[@placeholder='Enter Subject...']"));
         subjectField.sendKeys("Incubator Team - Github Actions funciona !!! :)");
