@@ -21,7 +21,7 @@ public class AppTest
         password.sendKeys("incubator2022");
         loginButton.click();
 
-        Thread.sleep(8000);
+        Thread.sleep(7000);
 
 //        WebElement selectAllContactsCheckbox = driver.findElement(By.xpath("(//span[@class='slds-checkbox--faux'])[1]"));
         WebElement selectRogerContact = driver.findElement(By.xpath("(//a[text()='Roger Ruiz']/ancestor::tr//td/following-sibling::td[@class='slds-cell-edit cellContainer'])[1]"));
@@ -54,7 +54,7 @@ public class AppTest
                 "Github Actions con Selenium test. Se ejecuto y se ejecutara al hacerle push a la rama principal. " +
                 "Github Repo: https://github.com/rogeruiz22/martes171119.git");
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
         driver.switchTo().parentFrame();
         driver.switchTo().parentFrame();
