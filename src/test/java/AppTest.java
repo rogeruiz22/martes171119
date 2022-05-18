@@ -52,7 +52,7 @@ public class AppTest
                 "Github Actions con Selenium test. Se ejecuto y se ejecutara al hacerle push a la rama principal. " +
                 "Github Repo: https://github.com/rogeruiz22/martes171119.git");
 
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
         driver.switchTo().parentFrame();
         driver.switchTo().parentFrame();
@@ -60,7 +60,7 @@ public class AppTest
         WebElement sendButton = driver.findElement(By.xpath("//button[text()='Send']"));
         sendButton.click();
 
-        Thread.sleep(8000);
+        Thread.sleep(5000);
 
         driver.quit();
     }
